@@ -1,132 +1,133 @@
 <!DOCTYPE html>
-<html lang="english">
-  <head>
-    <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 2.15; }
-	  body {  margin: 0; }
-	  * {  box-sizing: border-box;  border-width: 0;  border-style: solid;}
-	  p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
-	  button {  background-color: transparent;}
-	  button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
-	  button,select {  text-transform: none;}
-	  button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}
-	  button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}
-	  button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: blue;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body{
+             background: url("Images/Vector.png"); 
+            background-color: #111928;
+            background-size: cover;
+            font-family: 'Inter', sans-serif;
+             background-repeat: no-repeat; 
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        .logo{
+            height: 5.375rem;
+            width:5.375rem;
+            background-size: cover;
+            
+           
+        }
+        .text-logo{
+            color:white;
+            font-size:1.5rem;
+            font-weight: 600;
+            line-height: 2.25rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            
+        }
+        .header{
+            display: flex;
+           justify-content: space-between;
+           
+        }
+        .container{
+            width: 80rem;
+            height: 5.375rem;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .navbar a{
+            color:white;
+            text-decoration: none;
+            margin-right: 3rem;
+            
+        }
+        .navbar{
+           display: flex;
+           justify-content: flex-start;
+           align-items: center;
+           width: 39.0625rem;
+           /* height: 5rem; */
+           /* border: 2px solid red; */
+        }
+        .navbar nav{
+            display: flex;
+            /* margin-top: 2rem; */
+        }
+        .login{
+            display: flex;
+            width: 13.875rem;
+            height: 2.5625rem;
+            /* border: 2px solid red; */
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .login a{
+            color:white;
+            font-weight: 500;
+            font-size: 0.875rem;
+            
+        }
+        .btn{
+            font-size: 0.875rem;
+            font-weight: 500;
+            /* width: 4.8125rem;
+            height: 1.3125rem; */
+            padding: 0.63rem 1.25rem;
+            background-color: #1a56db;
+            border-radius: .5rem;
+            
+        }
+        
     </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 2.15;
-        color: var(--dl-color-gray-black);
-		
-        background-color: var(--dl-color-gray-white);
-
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link rel="stylesheet" href="./style.css" />
-	<link href="./index.css" rel="stylesheet" />
-	
-  </head>
-  <body>
-    
-	<div class="m-auto">
-    <div>
-      <div class="login-container">
-        <div class="login-login">
-          <div class="login-jumbotron">
-            <div class="login-container1">
-			<div class="col-content">
-				<div class="layer">
-					<img src="Layer.png">
-				</div>
-              <div class="login-title-desc">
-                <span class="login-text leadingNonetext-6xlfontExtrabold">
-                  <span>We invest in the world’s potential</span>
-                </span>
-                <span class="login-text02 textXlfontNormal">
-                  <span>
-                    Here at flowbite we focus on markets where technology,
-                    innovation, and capital can unlock long-term value and drive
-                    economic growth.
-                  </span>
-                </span>
-                <div class="login-link">
-                  <span class="login-text04 textLgfontMedium">
-                    <span>Read more about our app</span>
-                  </span>
-                  <img
-                    src="public/external/arrowright1062-x5gi.svg"
-                    alt="arrowright1062"
-                    class="login-arrowright"
-                  />
-                </div>
-              </div>
-			  </div>
-			  </div>
-			  
-              <div class="login-sign-up-form">
-			  <form>
-                <span class="login-text06 text-2xlfontBold">
-                  <span>Sign In</span>
-                </span>
-                <div class="login-input-field">
-                  <span class="login-text08 textSmfontMedium">
-                    <span>Your email</span>
-                  </span>
-                  <input class="login-input1 login-text10 leadingTighttextSmfontNormal login-content" placeholder="name@example.com">
-                    
-                  </input>
-                </div>
-                <div class="login-input-field1">
-                  <span class="login-text12 textSmfontMedium">
-                    <span>Password</span>
-                  </span>
-                  <input class="login-input1 login-content1 login-text14 leadingTighttextSmfontNormal" placeholder="••••••••••">
-                    <div class="">
-                     
-                    </div>
-                  </input>
-                </div>
-                <input type="checkbox" class="login-checkbox login-termsandcondition login-checkbox1 ">  
-						<span class="login-text16 leadingNonetextSmfontNormal">
-							<span>Remember this device</span>
-                      </span>				
-                </input>
-				
-                <button class="login-button">
-                  <span class="login-text18 textSmfontMedium">
-                    <span>Login to your account</span>
-                  </span>
-                </button>
-				</form>
-                <span class="login-text20">
-                  <span class="login-text21">Not registered yet?</span>
-                  <a href="#">Create an account</a>
-                </span>
-              </div>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="Images/while-logo.png" alt="">
             </div>
-          </div>
+            <div class="text-logo">
+                <div class="text-1">
+                    Seekers
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="navbar">
+            <nav>
+                <div class="li1"><a href="#">CV Builder</a></div>
+                <div class="li2"><a href="#">Marketplace</a></div>
+                <div class="li3"><a href="#">Job</a></div>
+                <div class="li4"><a href="#">Companies</a></div>
+                <div class="li5"><a href="#">Contact</a></div>
+            </nav>
+        </div>
+        <div class="login">
+            <div class="lgin"><a href="#">Log In</a></div>
+            <div class="btn"><a href="#">Get Started</a> </div>
+        </div>
     </div>
-	</div>
-  </body>
+</body>
 </html>
