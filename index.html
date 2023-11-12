@@ -13,6 +13,8 @@
             padding: 0;
             box-sizing: border-box;
             text-decoration: none;
+            /* border:2px solid red; */
+            
         }
         body{
              background: url("Images/Vector.png"); 
@@ -22,6 +24,7 @@
              background-repeat: no-repeat; 
             width: 100vw;
             height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             
         }
         .logo{
@@ -100,8 +103,13 @@
             border-radius: .5rem;
             
         }
+        h1{
+          color:white;
+          text-align: center;
+        }
         
     </style>
+    <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
     <div class="container">
@@ -129,5 +137,72 @@
             <div class="btn"><a href="#">Get Started</a> </div>
         </div>
     </div>
+    <main class="container2">
+        <div class="inner_container">
+            <div class="cv_builder">
+              <div class="new_cv">
+                <p class="text">New</p>
+              </div>
+              <div class="cv_link">
+                <a href="#">Added new resume builder</a>
+              </div>
+              <div class="right_arrow">
+                  <img src="public/external/chevron-right.svg" alt="">
+              </div>
+            </div>
+            <div>
+              <h1>
+                Connecting <span class="dsgn1">Dreams</span> <span class="dsgn2">to</span>
+                <span class="dsgn3">Opportunities</span>
+            </h1>
+            <h1>Your Job, Your Way.</h1>
+            </div>
+            <div class="simple-para">
+              <p>
+                Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
+              </p>
+            </div>
+
+            <div class="searching_form">
+              <form action="">
+                <div class="flx">
+                <div class="find_job">
+                  <div class="job_text">
+                  </div>
+                  <div class="fnd_job_div">
+                    <label for="fnd_job"></label>
+                    <input type="text" id="fnd_job" name="fnd_job" placeholder="Find a job">
+                  </div>
+                </div>
+                
+                  <div class="sector_div">
+                    <label for="sector"></label>
+                    <input type="text" id="sector" name="sector" placeholder="sector">
+                  </div>
+                </div>
+                  <div class="flx2">
+                <div class="text_div">
+                  <p>Availability</p>
+                </div>
+                <div class="toggle">
+
+                </div>
+                <div class="search_btn">
+                    <a href="#">Search</a>
+                </div>
+              </div>
+
+                
+              </div>
+              </form>
+            </div>
+        </div>
+        
+    </main>
+    <script>
+      const body = document.querySelector("body"),
+       toggle = document.querySelector(".toggle");
+       toggle.addEventListener("click",() => toggle.classList.toggle("active"));
+    </script>
 </body>
 </html>

@@ -1,0 +1,181 @@
+.container2{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding-top:96px;
+    /* padding-bottom:96px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.inner_container{
+    width: 90%;
+    height: 80%;
+    /* margin: auto; */
+    /* background-color: green; */
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap:40px;
+
+}
+.cv_builder{
+    width: 300px;
+    height: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+   
+    justify-content: space-around;
+    align-items: center;
+    border-radius:15px ;
+}
+.new_cv{
+    width: 50px;
+    height: 22px;
+    background-color: #1c64f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 2px;
+}
+.text {
+    font-size: 12px;
+   font-family: "Inter";
+   font-weight: 500;
+   color: rgba(255, 255, 255, 1);
+   width: 26px;
+   height: 18px;
+}
+
+.right_arrow{
+    width: 16px;
+    height: 16px;
+}
+.dsgn1{
+    background-image: linear-gradient(to right, #FDFCFF 5.39%, #42FF49 46.21%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+}
+.dsgn3{
+    background-image: linear-gradient(to right bottom,white,#ff01c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+.simple-para{
+    color:#b7bcc6;
+    text-align: center;
+    width: 46%;
+}
+.searching_form{
+    width:100% ;
+    height: 50%;
+    /* background-color: wheat; */
+    color:#FFFFFF;
+    
+ 
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    
+    /* background-color: red; */
+}
+ .flx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:41%;
+    height: 50%;
+    /* background-color: blue; */
+
+    
+}
+.flx2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+    /* background-color: yellow; */
+
+    
+    
+}
+
+/*.searching_form h3{
+    margin-bottom: 10px;
+    width:250px ;
+    height: 41.3px;
+}
+.fnd_job_div .sector_div{
+    width:250px ;
+    height: 41.3px;
+}
+.text_div p{
+    width:250px ;
+    height: 41.3px;
+} */
+.find_para{
+    font-size: 18.47px;
+font-family: "Poppins";
+font-weight: 500;
+color: rgba(255, 255, 255, 1);
+width: 131.25px;
+height: 28.54px;
+}
+input[type="text"]{
+    border-radius: 10px;
+    width: 250px;
+    height: 41.3px;
+    text-align: center;
+}
+input[type="sector"]{
+    border-radius: 10px;
+    width: 250px;
+    height: 41.3px;
+    text-align: center;
+}
+.toggle{ 
+    width:51.9px;
+    height:28.33px;
+    background-color: #1c64f2;
+    border-radius: 30px;
+    position:relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    cursor:pointer;
+}
+.toggle::before{
+    content:'';
+    position: absolute;
+    height: 25.33px;
+    width: 25.33px;
+    background-color: #fff ;
+    border-radius: 50%;
+    top:50%;
+    left:5px;
+    transform: translateY(-50%);
+}
+.toggle.active::before{
+    left:calc(100% - 25.33px - 5px);
+}
+.search_btn{
+    width:104px;
+    height: 39.5px;
+    background-color: #1c64f2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_btn a{
+    color:white;
+}
