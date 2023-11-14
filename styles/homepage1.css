@@ -1,0 +1,278 @@
+.container{
+    background-image: url("../Vector.png");
+    width: 100vw;
+    height: 100vh;
+    background-color: #1d1274;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    
+    
+    
+}
+
+.main-container{
+    width: 80rem;
+    /* height: 5.375rem; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap:5.375rem;
+}
+/* Start header Section  */
+.header{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+/* Start logo section  */
+.logo-section{
+    width: 12.0625rem;
+    height: 5.375rem;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.while-logo{
+    width: 5.375rem;
+    height: 5.375rem;
+    
+}
+.Seekers{
+    width: 5.935rem;
+    height: 5.375rem;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height:2.25rem;
+
+}
+/* End logo Section  */
+/* Start Navbar Section  */
+.navbar{
+    width: 39.0625rem;
+    height: 5.375rem;
+    /* background-color: aqua; */
+    display: flex;
+    gap:0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    color:rgba(255, 255, 255, 1);
+    font-weight: 500;
+}
+.navbar a{
+    color:rgba(255, 255, 255, 1);
+}
+.cv-link{
+    width: 5.0625rem;
+    font-size:1rem;
+}
+.market-link{
+    width: 5.9375rem;
+    font-size:1rem;
+}
+.job-link{
+    width:1.8125rem;
+    font-size:1rem;
+}
+.companies-link{
+    width: 5.4375rem;
+    font-size:1rem;
+}
+.contact-link{
+    width:3.875rem;
+    font-size:1rem;
+}
+/* End navbar section  */
+/* start login section  */
+.login-section{
+    width: 10.875rem;
+    height: 5.375rem;
+    /* background-color: bisque; */
+    display: flex;
+    font-size: 0.875rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap:1rem;
+}
+.lgn{
+    width: 2.5625rem;
+    /* background-color: green; */
+}
+.lgn a{
+    color:rgba(255, 255, 255, 1);
+}
+
+/* end login section  */
+/* Start main contetnt  */
+.main-content{
+    width: 80rem;
+    height: 30rem;
+    /* background-color: green; */
+   
+}
+.inner_container{
+    width: 100%;
+    height: 100%;
+    /* margin: auto; */
+    /* background-color: green; */
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap:2.5rem;
+    
+
+}
+.cv_builder{
+    width: 17.625rem;
+    height: 1.875rem;
+    background-color: #FFFFFF;
+    display: flex;
+   
+    justify-content: space-around;
+    align-items: center;
+    border-radius:0.9375rem ;
+}
+.new_cv{
+    width: 3.125rem;
+    height: 1.375rem;
+    padding:0.125rem 0.75rem 0.125rem 0.75rem;
+    background-color: #1c64f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.675rem;
+    font-weight: 500;
+    /* margin-left: 2px; */
+}
+.text {
+    font-size: 0.75rem;
+   font-family: "Inter";
+   
+   color: rgba(255, 255, 255, 1);
+   line-height: 1.125rem;
+   width: 1.625rem;
+   height: 1.125rem;
+   font-weight: 500;
+
+}
+
+.cv_link1 a{
+    color:#1c64f2;
+}
+.right_arrow{
+    width: 1rem;
+    height: 1rem;
+}
+.heading-1{
+    width: 80rem;
+    
+    /* background-color: wheat; */
+    margin:0 auto;
+    text-align: center;
+    font-size: 1.70rem;
+
+
+}
+.dsgn1{
+    background-image: linear-gradient(to right, #FDFCFF 5.39%, #42FF49 46.21%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+
+}
+.dsgn3{
+    background-image: linear-gradient(to right bottom,white,#ff01c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+}
+.simple-para{
+    color:#b7bcc6;
+    font-weight: 400;
+    text-align: center;
+    width: 48rem;
+    height: 3.75rem;
+    font-size: 1.25rem;
+    /* background-color: blue; */
+    line-height: 1.875rem;
+}
+.search-bar{
+    width: 40.261875rem;
+    height: 4.070625rem;
+    border-radius: 2rem;
+    border: 1px solid #4B4EFC;
+    background: white;
+    box-shadow: 1.25rem 1.25rem 3.125rem 0rem rgba(49, 49, 49, 0.05);
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.search-content1{
+    width:  4.070625rem;
+    height:  4.070625rem;
+    /* background-color: red; */
+    position: relative;
+    
+}
+.search-icon1{
+    width: 2.89888rem;
+    height: 4.070625rem;
+    flex-shrink: 0;
+    /* background-color: blue; */
+    
+    align-items: center;
+    position: absolute;
+    top:0.5rem;
+    left: 0.5rem;
+}
+.search-icon2{
+    width: 2.89888rem;
+    height: 4.070625rem;
+    flex-shrink: 0;
+    /* background-color: blue; */
+    
+    position: absolute;
+    top: 1.4rem;
+    left: 1.5rem;
+}
+input[type="text"]{
+    border:none;
+    width: 13.4375rem;
+    height: 1.6875rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 5rem;
+}
+.search-content2{
+    width: 10.65625rem;
+    height: 2.818125rem;
+    border-radius:1.5rem;
+    /* background-color: red; */
+    position: absolute;
+    top:0.56rem;
+    left:29rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.location-logo{
+    width: 1.288125rem;
+    height: 1.2525rem;
+    /* background-color: green; */
+}
+.any-location select{
+    border:none;
+    color:gray;
+    
+}
