@@ -28,7 +28,11 @@ html{
 body{
     font-size: 1.6rem;
     font-family: var(--font-poppins);
+   
+   
+    
 }
+
 
 button{
     border: none;
@@ -109,10 +113,34 @@ a{
 .ls-1{letter-spacing: 1px;}
 .ls-2{letter-spacing: 2px;}
 
+.body-container{
+    width: 100vw;
+    height: 100%;
+    background-color: #1d1274;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.shadow{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(3, 29, 84) 0%, rgb(1, 3, 8) 100%);
+}
+.patternImage{
+    width: 100%;
+    height: 100%;
+     background-image: url("../../Vector.png");
+    background-size: cover; 
+    background-attachment: fixed;
+}
 .container{
     max-width: 1200px;
+    
     margin: 0 auto;
     padding: 0 1.6rem;
+    
 }
 
 /* bars button */
@@ -152,13 +180,13 @@ a{
 
 .btn-primary:hover{
     background-color: transparent;
-    color: var(--clr-dark);
+    color: var(--clr-grey);
     border-color: var(--clr-grey);
 }
 
 .btn-secondary{
     background-color: transparent;
-    color: var(--clr-dark);
+    color: var(--clr-grey);
     border: 1px solid var(--clr-grey);
     transition: var(--transition);
 }
@@ -192,8 +220,9 @@ a{
     font-size: 1.8rem;
 }
 .navbar-brand-text{
-    color: var(--clr-dark);
+    color: var(--clr-white);
     font-weight: 600;
+    font-size: 2.5rem;
 }
 .navbar-brand-text span{
     color: var(--clr-blue);
@@ -230,7 +259,7 @@ a{
     margin: 1.4rem 0;
     font-size: 37px;
     line-height: 1.4;
-    color: var(--clr-dark);
+    color: var(--clr-white);
 }
 .header-content p{
     margin-bottom: 2.6rem;
@@ -290,7 +319,7 @@ a{
     margin-left: auto;
 }
 .section-two .section-item-title{
-    color: var(--clr-blue-dark);
+    color: var(--clr-white);
     font-size: 1.8rem;
     font-weight: 600;
 }
