@@ -405,7 +405,7 @@ textarea{
     display: block;
     font-weight: 600;
     font-size: 14px;
-    color: var(--clr-dark);
+    color: var(--clr-white);
     margin-bottom: 0.5rem;
 }
 .form-control{
@@ -417,6 +417,7 @@ textarea{
     width: 100%;
     outline: 0;
     transition: var(--transition);
+    /* color:white; */
 }
 
 .form-control:focus{
@@ -568,6 +569,10 @@ textarea{
 }
 .projects-items.preview-blk-list .preview-item span{
     display: block;
+}
+input[type="file"]{
+
+    color: var(--clr-white);
 }
 
 @media screen and (min-width: 768px){
