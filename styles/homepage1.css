@@ -1,13 +1,14 @@
 body{
-   
+   color:#fff;
 }
 
 .container{
     /* background-image: url("../Vector.png"); */
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #1d1274;
     background-size: cover;
+    /* background-attachment:scroll; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -26,6 +27,7 @@ body{
     height: 100%;
     background-image: url("../Vector.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 .main-container{
     width: 80rem;
@@ -291,4 +293,131 @@ input[type="text"]{
     border:none;
     color:gray;
     
+}
+/* .company-by-industry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+.company-by-industry-heading{
+    width: 100%;
+    color:var(--clr-bright);
+    margin-bottom: 0.5rem;
+}
+.company-by-industry-section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+    /* position: relative; */
+}
+
+.green-div{
+    border: 2px solid grey;
+    height: 10rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 5;
+    border-radius: 2rem;
+}
+.green-div a{
+    color: lightgray;
+}
+.red-div img{
+    width: 4rem;
+    height: 4rem;
+}
+.company-by-industry-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company-by-industry-list a{
+   color: #2557a7;
+   background-color: #fff;
+   padding:17px;
+   margin: 10px;
+   border-radius: 0.5rem;
+   border:1px solid;
+    
+}
+/* .green-div:hover{
+    opacity: 80%;
+    box-shadow: 10px 10px 100px grey;
+} */
+.yellow-div a:hover{
+    color:#fff;
+}
+.company-by-industry-list a:hover{
+    background-color: #b7bcc6;
+}
+.popular-companies-section{
+    width: 100%;
+    
+}
+.popular-companies-section-heading{
+    width: 100%;
+}
+.popular-companies-section-body{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    grid-gap:2rem;
+    
+}
+.popular-company-card{
+    /* width: 250px; */
+    line-height: 1.25rem;
+    /* border: 2px solid red; */
+    border-radius: 1.25rem;
+    height: 8rem;
+    /* margin: auto; */
+    /* gap:1.25rem; */
+    
+}
+.imge{
+    width: 4rem;
+    height: 4rem;
+    border-radius:1rem ;
+}
+.popular-company-card-innerBox-1{
+    display: flex;
+
+}
+.popular-company-name-and-other-heading{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: .5rem;
+}
+.popular-company-rating{
+    /* background-color: red; */
+}
+.popular-company-review-and-rating{
+    width: 10rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    /* border: 2px solid red; */
+}
+.popular-company-review-and-rating a{
+    color: #fff;
+}
+.popular-company-card-innerBox-2{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    color:white;
+}
+.popular-company-card-innerBox-2 a{
+    color:white;
 }

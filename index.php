@@ -107,87 +107,73 @@
             </div>
 
         <!-- End main content  -->
+       
             <div class="company-by-industry">
                 <div class="company-by-industry-heading">
                     <h2>Browse companies by industry</h2>
                 </div>
+                <?php
+                    $conn = mysqli_connect("localhost","root","","JobPortal")     or die("Connection lost");
+                    $sql = "SELECT 	industryLogo,industryName FROM companybyindustry ";
+                    $result = mysqli_query($conn,$sql) or die("Unsuccessfull");
+                    if(mysqli_num_rows($result)>0){  
+                ?>
                 <div class="company-by-industry-section">
+                    <?php
+                        while($row=mysqli_fetch_assoc($result)) {  
+                    ?>
                     <div class="green-div">
                         <div class="red-div">
-                            <img src="Images/spaceship.png" alt="">
+                            <img src="<?php echo $row["industryLogo"]?>" alt="">
                         </div>
                         <div class="yellow-div">
-                            <h3> <a href="#">Aerospace & Defense</a></h3>
+                            <h3> <a href="#"><?php echo $row["industryName"]?></a></h3>
                         </div>
                     </div>
-                    <div class="green-div">
-                        <div class="red-div">
-                            <img src="Images/spaceship.png" alt="">
-                        </div>
-                        <div class="yellow-div">
-                            <h3> <a href="#">Aerospace & Defense</a></h3>
-                        </div>
-                    </div>
-                     <div class="green-div">
-                    <div class="red-div">
-                        <img src="Images/spaceship.png" alt="">
-                    </div>
-                    <div class="yellow-div">
-                       <h3> <a href="#">Aerospace & Defense</a></h3>
-                    </div>
-                </div>
-                
-                <div class="green-div">
-                    <div class="red-div">
-                        <img src="Images/spaceship.png" alt="">
-                    </div>
-                    <div class="yellow-div">
-                       <h3> <a href="#">Aerospace & Defense</a></h3>
-                    </div>
-                </div>
-                <div class="green-div">
-                    <div class="red-div">
-                        <img src="Images/spaceship.png" alt="">
-                    </div>
-                    <div class="yellow-div">
-                       <h3> <a href="#">Aerospace & Defense</a></h3>
-                    </div>
-                </div>
-                <div class="green-div">
-                    <div class="red-div">
-                        <img src="Images/spaceship.png" alt="">
-                    </div>
-                    <div class="yellow-div">
-                       <h3> <a href="#">Aerospace & Defense</a></h3>
-                    </div>
-                </div>
+                    <?php }?>
+                    <?php } else{
+                        echo "No record found";
+                    } 
+                    mysqli_close($conn);
+                    ?>
+                     
                 </div>
                
                 
                 <div class="company-by-industry-list">
                     <a href="#">See All Industries</a>
                 </div>
+
             </div>
             <div class="popular-companies-section">
                 <div class="popular-companies-section-heading">
                     <h2>Popular Companies</h2>
                 </div>
                 <div class="popular-companies-section-body">
+                    <?php 
+                        $conn2=mysqli_connect("localhost","root","","JobPortal") or die("connection failed");
+                        $sql2 = "SELECT 	companyImage,companyName,companyRating,companyRating,companyReview FROM  popularcompany ORDER BY companyRating DESC ";
+                        $result2 = mysqli_query($conn2,$sql2) or die("Unsuccessfull");
+                        if(mysqli_num_rows($result2)>0){
+                    ?>
+                    <?php 
+                        while($row2=mysqli_fetch_assoc($result2)){
+                    ?>
                     <div class="popular-company-card">
                         <div class="popular-company-card-innerBox-1">
                             <div clas="popular-company-image">
-                                <img class="imge" src="Images/petSmart.jpg" alt="">
+                                <img class="imge" src="<?php echo $row2["companyImage"]?>" alt="">
                             </div>
                             <div class="popular-company-name-and-other">
                                 <div class="popular-company-name-and-other-heading">
-                                    <h3>petSmart</h3>
+                                    <h3><?php echo $row2["companyName"]?></h3>
                                 </div>
                                 <div class="popular-company-review-and-rating">
                                     <div class="popular-company-rating">
-                                        5 star
+                                    <?php echo $row2["companyRating"]?> star
                                     </div>
                                     <div class="popular-company-review">
-                                        <a href="#">278 Reviews</a>
+                                        <a href="#"><?php echo $row2["companyReview"]?> Reviews</a>
                                     </div>
                                 </div>
                             </div>
@@ -198,6 +184,8 @@
                             <a href="#">Open Job</a>
                         </div>
                     </div>
+                    <?php }?>
+                    <?php }?>
                 </div>
             </div>
         </div>
